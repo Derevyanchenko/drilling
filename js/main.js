@@ -64,8 +64,11 @@ $(document).ready(function() {
       $('html, body').animate({
         scrollTop: target.offset().top
       }, 1000);
+      $(".mobileMenu-overlay").removeClass("open");
       return false;
     }
+
+    // $(".mobileMenu-overlay").removeClass("open");
   });
 
   // burger
