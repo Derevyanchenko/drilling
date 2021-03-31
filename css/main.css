@@ -647,6 +647,7 @@ input :-ms-input-placeholder {
     padding: 18px 0; } }
 
 .main {
+  display: none;
   padding-top: 101px;
   padding-bottom: 104px;
   background-image: url(../img/main-bg.jpg);
