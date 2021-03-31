@@ -16,7 +16,7 @@ function show_thanks_popup()
 function close_popup()
 {
   $('.overlay').fadeOut(200);
-  $("body, html").css("overflow-y", "scroll");
+  $("body, html").css("overflow-y", "");
 }
 
 
