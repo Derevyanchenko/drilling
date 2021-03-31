@@ -400,6 +400,7 @@ input :-ms-input-placeholder {
     line-height: 16px; } }
 
 .header {
+  display: none;
   padding-top: 41px;
   padding-bottom: 36px; }
 
@@ -647,7 +648,7 @@ input :-ms-input-placeholder {
     padding: 18px 0; } }
 
 .main {
-  display: none;
+  display: block;
   padding-top: 101px;
   padding-bottom: 104px;
   background-image: url(../img/main-bg.jpg);
