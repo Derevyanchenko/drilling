@@ -63,7 +63,7 @@ input:focus {
   outline: none; }
 
 body, html {
-  overflow-x: hidden;
+/*   overflow-x: hidden; */
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch; }
 
@@ -400,7 +400,7 @@ input :-ms-input-placeholder {
     line-height: 16px; } }
 
 .header {
-  display: none;
+  display: block;
   padding-top: 41px;
   padding-bottom: 36px; }
 
