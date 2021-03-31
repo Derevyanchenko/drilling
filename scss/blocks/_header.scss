@@ -13,6 +13,10 @@
 
 .logo {
     flex-shrink: 0;
+    img {
+        width: 65px;
+        height: 80px;
+    }
 }
 
 .header__right {
@@ -146,9 +150,10 @@
     }
 
     .logo {
-        max-width: 49px;
+        max-width: 50px;
         img {
-            max-width: 100%;
+            width: 50px;
+            height: 63px;
         }
     }
 
@@ -179,12 +184,6 @@
         padding: 14px 23px;
     }
 
-    .logo {
-        max-width: 49px;
-        img {
-            max-width: 100%;
-        }
-    }
 
     .header__menu li a {
         margin-left: 15px;
