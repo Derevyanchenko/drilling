@@ -45,18 +45,8 @@ document.addEventListener('touchmove', function (){
 }, false);
 
 
-// iframe lazy loading
-function iframeLazyLoading() {
-  let iframe = $("iframe"),
-      iframeUrl = iframe.attr("data-src");
-
-  iframe.attr("src", iframeUrl)
-}
-
 // ready
 $(document).ready(function() {
-
-  iframeLazyLoading();
 
   $("form").on("submit", function(e) {
     e.preventDefault();
@@ -68,8 +58,15 @@ $(document).ready(function() {
       close_popup();
     }, 5000);
   });
-  
 
+  // iframe lazy loading
+
+  setTimeout(function(){
+      let iframe = $("iframe"),
+      iframeUrl = iframe.attr("data-src");
+      iframe.attr("src", iframeUrl);
+  }, 3000);
+  
   // lazy scroll to section
 
   $('a[href*="#"]').click(function() {
