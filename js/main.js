@@ -16,7 +16,7 @@ function show_thanks_popup()
 function close_popup()
 {
   $('.overlay').fadeOut(200);
-  $("body, html").css("overflow-y", "");
+  $("body, html").css("overflow-y", "scroll");
 }
 
 
@@ -39,6 +39,10 @@ $(document).mouseup(function (event) {
       }
   }
 });
+
+document.addEventListener('touchmove', function (){
+  var scrollTop = window.pageYOffset;
+}, false);
 
 // ready
 
