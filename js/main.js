@@ -65,7 +65,7 @@ $(document).ready(function() {
       let iframe = $("iframe"),
       iframeUrl = iframe.attr("data-src");
       iframe.attr("src", iframeUrl);
-  }, 3000);
+  }, 2000);
   
   // lazy scroll to section
 
