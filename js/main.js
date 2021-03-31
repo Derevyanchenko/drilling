@@ -44,10 +44,19 @@ document.addEventListener('touchmove', function (){
   var scrollTop = window.pageYOffset;
 }, false);
 
+
+// iframe lazy loading
+function iframeLazyLoading() {
+  let iframe = $("iframe"),
+      iframeUrl = iframe.attr("data-src");
+
+  iframe.attr("src", iframeUrl)
+}
+
 // ready
-
-
 $(document).ready(function() {
+
+  iframeLazyLoading();
 
   $("form").on("submit", function(e) {
     e.preventDefault();
@@ -59,6 +68,7 @@ $(document).ready(function() {
       close_popup();
     }, 5000);
   });
+  
 
   // lazy scroll to section
 
