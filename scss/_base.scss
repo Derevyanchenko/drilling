@@ -10,49 +10,48 @@
 */ 
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('fonts/Gilroy-ExtraBold.eot');
-    src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'),
-        url('fonts/Gilroy-ExtraBold.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Gilroy-ExtraBold.woff') format('woff'),
-        url('fonts/Gilroy-ExtraBold.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
+	font-family: 'Gotham Pro';
+	src: url('fonts/GothamPro.eot');
+	src: local('Gotham Pro'), local('GothamPro'),
+		url('fonts/GothamPro.eot?#iefix') format('embedded-opentype'),
+		url('fonts/GothamPro.woff') format('woff'),
+		url('fonts/GothamPro.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('fonts/Gilroy-SemiBold.eot');
-    src: local('Gilroy SemiBold'), local('Gilroy-SemiBold'),
-        url('fonts/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Gilroy-SemiBold.woff') format('woff'),
-        url('fonts/Gilroy-SemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
+	font-family: 'Gotham Pro';
+	src: url('fonts/GothamPro-Medium.eot');
+	src: local('Gotham Pro Medium'), local('GothamPro-Medium'),
+		url('fonts/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
+		url('fonts/GothamPro-Medium.woff') format('woff'),
+		url('fonts/GothamPro-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('fonts/Gilroy-Regular.eot');
-    src: local('Gilroy Regular'), local('Gilroy-Regular'),
-        url('fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Gilroy-Regular.woff') format('woff'),
-        url('fonts/Gilroy-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'Gotham Pro';
+	src: url('fonts/GothamPro-Bold.eot');
+	src: local('Gotham Pro Bold'), local('GothamPro-Bold'),
+		url('fonts/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
+		url('fonts/GothamPro-Bold.woff') format('woff'),
+		url('fonts/GothamPro-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('fonts/Gilroy-Medium.eot');
-    src: local('Gilroy Medium'), local('Gilroy-Medium'),
-        url('fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Gilroy-Medium.woff') format('woff'),
-        url('fonts/Gilroy-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
+	font-family: 'Gotham Pro';
+	src: url('fonts/GothamPro-Light.eot');
+	src: local('Gotham Pro Light'), local('GothamPro-Light'),
+		url('fonts/GothamPro-Light.eot?#iefix') format('embedded-opentype'),
+		url('fonts/GothamPro-Light.woff') format('woff'),
+		url('fonts/GothamPro-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
 }
-
 
 
 // styles
@@ -82,7 +81,7 @@ button {
 	display: block;
 	background: transparent;
 	cursor: pointer;
-	font-family: 'Gilroy', sans-serif;
+	font-family: 'Gotham Pro', sans-serif;
 }
 
 input {
@@ -92,15 +91,15 @@ input {
 }
 
 body, html {
-	// overflow-x: hidden;
+	overflow-x: hidden;
 	-webkit-overflow-scrolling: touch;
 }
 
 body {
-	color: #000000;
+	color: #0A1500;
 	font-size: 16px;
-	font-family: 'Gilroy', sans-serif;
-	font-weight: 400;
+	font-family: 'Gotham Pro', sans-serif;
+	font-weight: 300;
 	position: relative;
 }
 
@@ -119,7 +118,7 @@ h2 {
   
   button,
   input {
-    font-family: 'Gilroy', sans-serif;
+    font-family: 'Gotham Pro', sans-serif;
     outline: none;
     border: none;
   }
@@ -129,112 +128,140 @@ h2 {
 
 
 .fw500 {
-	font-weight: 600;
-  }
-
-.fw600 {
-  font-weight: 600;
+	font-weight: 500;
 }
 
 
 .fw700 {
 	font-weight: 700;
-  }
-  
-
-.fw800 {
-  font-weight: 800;
-}
+}  
 
 .btn {
-	background: #012E67;
-	border-radius: 5px;
-	font-weight: 500;
+	background: #FED330;
 	font-size: 14px;
-	line-height: 16px;
-	text-align: center;
-	color: #FFFFFF;
-	border: 1px solid transparent;
 	line-height: 1;
-	padding: 14px 63px;
+	text-align: center;
+	color: #0A1500;
+	border: 1px solid #FED330;
+	font-size: 14px;
+	line-height: 1;
+	padding: 20px 62px;
 	transition: all 0.3s;
 	flex-shrink: 0;
-	font-weight: 500;
+	font-weight: 400;
 	&:hover {
-		border: 1px solid #012E67;
-		background: #fff;
-		color: #012E67;
+		background: transparent;
+		color: #FED330;
+	}
+}
+
+.btn-black {
+	background: #0A1500;
+	font-size: 14px;
+	line-height: 1;
+	text-align: center;
+	color: #fff;
+	border: 1px solid #0A1500;
+	font-size: 14px;
+	line-height: 1;
+	padding: 20px 62px;
+	transition: all 0.3s;
+	flex-shrink: 0;
+	font-weight: 400;
+	&:hover {
+		color: #0A1500;
+		background: transparent;
 	}
 }
 
 .btn-bordered {
-	border-radius: 5px;
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 16px;
 	text-align: center;
 	line-height: 1;
-	padding: 17px 44px;
+	padding: 20px 76px;
 	transition: all 0.3s;
 	flex-shrink: 0;
+	display: inline-block;
+	border: 1px solid #FFFFFF;
+	background: transparent;
+	color: #fff;
 
-	border: 1px solid #012E67;
-	background: #fff;
-	color: #012E67;
+	svg {
+		margin-left: 6px;
+		margin-bottom: -3px;
+	}
+
+	svg path {
+		transition: all 0.3s;
+	}
+
 	&:hover {
-		background: #012E67;
-		color: #FFFFFF;
-		border: 1px solid transparent;
+		background: #fff;
+		color: #0A1500;
+		svg path {
+			fill: #0A1500 !important;
+		}
+	}
+}
+
+.btn-underline {
+	font-size: 16px;
+	line-height: 1;
+	color: #FED330;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #FED330;
+	transition: all 0.3s;
+	&:hover {
+		transition: all 0.3s;
+		border-bottom: 1px solid transparent;
 	}
 }
 
 .form__desc {
 	font-weight: normal;
-	font-size: 10px;
-	line-height: 12px;
+	font-size: 9px;
+	line-height: 125.1%;
 	text-align: center;
 	color: #FFFFFF;
 }
 
 .form-control {
-  max-width: 200px;
+  max-width: 298px;
+  margin: auto;
   width: 100%;
-  margin-right: 32px;
   flex-shrink: 0;
-  &:last-child {
-	  margin-right: 0;
-  }
+	margin-bottom: 25px;
   input {
-    background: #FFFFFF;
+    background: transparent;
     border: none;
-    box-sizing: border-box;
-	border-radius: 5px;
+	border: 1px solid #FFFFFF;
 
     font-family: "Gilroy", sans-serif;
     font-weight: 500;
 	font-size: 14px;
-    line-height: 16px;
-    padding: 14px 19px;
+    line-height: 13px;
+	color: #FFFFFF;
+    padding: 19px 29px;
     width: 100%;
-    height: 45px;
-    color: #5E5E5E;
   }
 }
 
 input ::-webkit-input-placeholder {
-  color: #5E5E5E;
+  color: #FFFFFF;
 }
 
 input ::-moz-placeholder {
-  color: #5E5E5E;
+  color: #FFFFFF;
 }
 
 input :-moz-placeholder {
-  color: #5E5E5E;
+  color: #FFFFFF;
 }
 
 input :-ms-input-placeholder {
-  color: #5E5E5E;
+  color: #FFFFFF;
 }
 
 
@@ -299,6 +326,16 @@ input :-ms-input-placeholder {
 		max-width: 50%;
 	}
 
+	.col-lg-5 {
+		flex: 0 0 41.6665%;
+		max-width: 41.6665%;
+	}
+
+	.col-lg-7 {
+		flex: 0 0 58.3331%;
+		max-width: 58.3331%;
+	}
+
   .col-lg-2 {
 		flex: 0 0 16.6666%;
 		max-width: 16.6666%;
@@ -318,7 +355,7 @@ input :-ms-input-placeholder {
 
 @media (min-width: 1366px) {
 	.container {
-		max-width: 1310px;
+		max-width: 1313px;
 		// padding: 0 15px;
 	}
 }	
@@ -333,19 +370,31 @@ input :-ms-input-placeholder {
 }
 
 .section__title {
-	text-align: center;
+	text-align: left;
   font-family: "Gilroy", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 50px;
-  line-height: 1.2;
+  line-height: 1;
   color: #000000;
+  padding-bottom: 22px;
+  position: relative;
+  &:before {
+	  content: "";
+	  display: block;
+	  width: 150px;
+	  height: 2px;
+	  background: #FED330;
+	  left: 0;
+	  bottom: 0;
+	  position: absolute;
+  }
 }
 
 .section__subtitle {
-	text-align: center;
-	font-size: 18px;
-	line-height: 21px;
+	text-align: left;
+	font-size: 16px;
+    line-height: 23px;
 }
 
 .mx-auto {
@@ -388,7 +437,7 @@ input :-ms-input-placeholder {
 }
 
 .slick-dots .slick-active button {
-	background: #012E67;
+	background: #0A1500;
 }
 
 .slider__dots-current {
@@ -463,6 +512,7 @@ input :-ms-input-placeholder {
 	.section__title {
 		font-size: 48px;
 		line-height: 54px;
+		padding-bottom: 22px;
 	}
     
 }
@@ -470,8 +520,13 @@ input :-ms-input-placeholder {
 
 @media (max-width: 991px) {
 	.section__title {
-		font-size: 42px;
-		line-height: 48px;
+		font-size: 32px;
+		line-height: 38px;
+		padding-bottom: 14px;
+	}
+
+	.section__title:before {
+		width: 90px;
 	}
 
 	.section__subtitle {
@@ -484,13 +539,22 @@ input :-ms-input-placeholder {
 
 @media (max-width: 767px) {
 	.section__title {
-		font-size: 35px;
-		line-height: 42px;
+		font-size: 22px;
+		line-height: 21px;
+		padding-bottom: 11px;
+	}
+
+	.section__title:before {
+		width: 65px;
 	}
 
 	.section__subtitle {
 		font-size: 14px;
 		line-height: 16px;
+	}
+
+	body {
+		font-weight: 400;
 	}
 }
 
